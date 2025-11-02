@@ -11,6 +11,35 @@
 
 <meta charset=UTF-8>
     <meta content="width=device-width,initial-scale=1" name=viewport>
+        <!-- Facebook Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod ?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=
+'https://connect.facebook.net/en_US/fbevents.js';
+s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script');
+fbq('init', '1157311586240038'); // Seu ID do Pixel aqui
+fbq('set','autoConfig',true,'1157311586240038');
+fbq('track', 'PageView');
+
+// Eventos básicos
+fbq('track', 'ViewContent'); // Visualização de conteúdo
+fbq('track', 'Search');      // Pesquisa no site
+fbq('track', 'AddToCart');   // Adicionou ao carrinho
+fbq('track', 'InitiateCheckout'); // Iniciou checkout
+fbq('track', 'AddPaymentInfo');   // Inseriu info de pagamento
+fbq('track', 'Purchase');    // Finalizou compra
+fbq('track', 'Lead');        // Virou lead (ex: cadastro)
+</script>
+<noscript>
+ <img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1157311586240038&ev=PageView&noscript=1"/>
+</noscript>
+<!-- End Facebook Pixel Code -->
     <script src=https://cdn.jsdelivr.net/npm/disable-devtool@latest disable-devtool-auto></script>
     <link href=css/style.css rel=stylesheet>
     <link href=https://fonts.googleapis.com/ rel=preconnect>
@@ -522,5 +551,6 @@
     <script src=https://cdn.jsdelivr.net/npm/disable-devtool@latest disable-devtool-auto disable-copy=true disable-cut=true disable-menu=true disable-paste=true disable-select=true></script>
     <script src=js.js></script>
     <script src=jss.js></script>
+
 
 
