@@ -1,0 +1,363 @@
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #ffffff;
+      color: #333;
+    }
+
+.header {
+  position: relative;            /* Para o position absolute do ícone */
+  display: flex;
+  justify-content: center;       /* Centraliza o conteúdo horizontalmente */
+  align-items: center;           /* Centraliza verticalmente */
+  height: 60px;                  /* Altura do cabeçalho */
+  background-color: #fff;        /* Cor de fundo (ajuste se necessário) */
+ 
+  padding: 0 20px;               /* Espaçamento horizontal */
+}
+
+.header-logo {
+  max-height: 36px;              /* Ajuste o tamanho do logo */
+}
+
+/* Ícone de idioma posicionado à direita */
+.language-icon {
+  position: absolute;
+  right: 20px;       /* Distância da lateral direita */
+  top: 50%;          /* Centraliza verticalmente */
+  transform: translateY(-50%);
+  font-size: 20px;   /* Tamanho do ícone */
+  cursor: pointer;   /* Indica que é clicável */
+}
+
+
+
+  .banner-container {
+  position: relative;
+  max-width: 900px;
+  margin:10px auto;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.banner {
+  position: relative;
+  height: 200px;
+}
+
+.banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.banner-info-top {
+  position: absolute;
+  top: 60px; /* Coloca no topo */
+  left: 60px; /* Alinha ao lado esquerdo */
+  color: #fff;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8); /* Adiciona sombra ao texto */
+}
+
+.banner-info-top h1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.stats {
+  display: flex;
+  gap: 10px;
+  font-size: 16px;
+  align-items: center;
+}
+
+.stats span {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.stats i {
+  font-size: 18px;
+}
+
+
+
+    .profile-picture-container {
+      position: absolute;
+      bottom: -40px;
+      left: 20px; /* Alinhado à esquerda */
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 5px solid #fff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .profile-picture {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .profile-info {
+      margin-top: 50px;
+      text-align: left;
+      padding-left: 20px; /* Alinhado à esquerda */
+    }
+
+    .profile-info h1 {
+      font-size: 24px;
+      margin-bottom: 5px;
+    }
+
+    .profile-info p {
+      font-size: 14px;
+      color: #66748e;
+      margin-bottom: 5px;
+    }
+
+    .profile-stats {
+      display: flex;
+      gap: 15px;
+      font-size: 14px;
+      color: #66748e;
+      margin-top: 10px;
+      padding-left: 20px; /* Alinhado à esquerda */
+    }
+
+.subscription-section {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 5px;
+  }
+
+  .subscription-title {
+    font-size: 16px;
+    font-weight: 500;
+    color: #000;
+    margin-bottom: 5px; /* Espaço entre o título e o botão */
+    text-align: left; /* Alinhamento à esquerda */
+    margin-left: 15px; /* Para alinhar com o botão */
+  }
+     
+     
+    
+    @media (max-width: 460px) {
+    .subscribe-button {
+        padding: 0 12px;
+    }
+}
+
+   
+    
+.subscribe-button {
+border-radius: 30px !important;
+    padding: 0 25px;
+    width: 100%;
+    height: 60px !important;
+    font-size: 18px;
+    font-weight: 700;
+    color: #fefefe;
+    background: linear-gradient(45deg, #F58170, #F9AF77);
+    
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1;
+    height: 32px;
+    white-space: nowrap;
+    cursor: pointer;
+
+    text-align: center;
+    box-sizing: border-box;
+    outline: 0;
+    transition: .1s;
+  
+ 
+   
+  
+    user-select: none;
+    vertical-align: middle;
+  
+   
+    border: var(--el-border);
+   
+    padding: 8px 15px;
+   
+  
+    
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between; /* Texto e preço bem separados */
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+    width: 100%; /* Largura total */
+    max-width: 900px; /* Largura máxima */
+    margin: 0 auto; /* Centralizado horizontalmente */
+    padding-left: 20px; /* Espaçamento interno no texto */
+    padding-right: 20px; /* Espaçamento interno no preço */
+    box-shadow: 0px 4px 10px rgba(255, 106, 106, 0.3); /* Sombras suaves */
+    
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+ .subscribe-button:hover {
+    transform: translateY(-3px); /* Elevação ao passar o mouse */
+    box-shadow: 0px 6px 15px rgba(255, 106, 106, 0.5); /* Sombras mais fortes */
+    background: linear-gradient(to right, #ff5a5a, #ff9a7a); /* Gradiente mais escuro */
+  }
+
+ 
+
+  .subscribe-text {
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  .subscribe-price {
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+
+
+    .description {
+      text-align: center;
+      margin: 20px auto;
+      max-width: 900px;
+      font-size: 16px;
+      color: #666;
+    }
+
+    .lower-section {
+      max-width: 900px;
+      margin: 20px auto;
+      position: relative;
+      height: 300px; /* Mesmo tamanho do banner superior */
+      background-color: #f4eee5; /* Fundo da seção */
+      border-radius: 10px;
+      overflow: hidden;
+      text-align: center;
+    }
+
+    .lower-section .background-image {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url("../../privacy.osbuceteiros.com/bg-locked.png") center/cover no-repeat;
+      z-index: 1;
+    }
+
+    .lower-section .logo-container {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 2;
+      width: 100px;
+      height: 100px;
+      background-color: #f4eee5; /* Fundo da logo */
+      border-radius: 50%; /* Deixar o fundo da logo circular */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .lower-section .logo-container img {
+      width: 70%;
+      height: 70%;
+      object-fit: contain;
+    }
+
+    .lower-section .lower-stats {
+      position: absolute;
+      bottom: 20px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      font-size: 14px;
+      color: #333;
+      z-index: 3;
+    }
+
+    .lower-section .lower-stats span {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+
+
+
+
+
+
+           .popup-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.6);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 9999;
+    }
+    .popup {
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    .popup h2 {
+      margin-bottom: 15px;
+    }
+    .popup button {
+      margin: 10px;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    .popup button.buy {
+      background-color: #28a745;
+      color: white;
+    }
+    .popup button.support {
+      background-color: #007bff;
+      color: white;
+    }
+    .popup button:hover {
+      opacity: 0.9;
+    }
+        
+    
+
+    
+
